@@ -1,3 +1,5 @@
+let modal = document.getElementById("modal");
+
 (function() {
     let tela = document.querySelector('.tela');
     let botoes = document.querySelectorAll('.btn');
@@ -32,4 +34,13 @@
     clear.addEventListener('click', function(e) {
         tela.value = "";
     });
-})()
+})();
+
+function openModal() {
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
